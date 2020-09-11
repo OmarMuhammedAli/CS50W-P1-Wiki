@@ -2,7 +2,7 @@
 
 ## Screencast
 -------------
-[Explore the features of the project from this link](https://youtu.be/rpH4Ot-bbC8)
+[Click here](https://youtu.be/rpH4Ot-bbC8) to explore the features of the project via a screencast.
 
 ## Overview:
 ------------
