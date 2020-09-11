@@ -1,0 +1,18 @@
+{% extends 'encyclopedia/layout.html' %}
+
+{% block title %} {{ title }} - Search {% endblock %}
+
+{% block search %} 
+{{ form }}
+{% endblock %}
+
+{% block body %}
+<ul>
+    <h2>Showing results containing "<em>{{ title }}</em>"</h2>
+    {% for result in results %}
+        <li><a href="{% url 'encyclopedia:entry_page' result %}">{{ result }}</a> </li>
+    {% empty %}
+        <h4>No results found!</h4>
+    {% endfor %}
+</ul>
+{% endblock %}

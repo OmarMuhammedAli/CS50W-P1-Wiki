@@ -1,0 +1,15 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>{% block title %}{% endblock %}</title>
+        <link rel="stylesheet" href="{% static 'encyclopedia/error404.css' %}">
+    </head>
+    <body>
+        <header>
+            {% block message %}{% endblock %}
+            <a href="{% url 'encyclopedia:index' %}">Home</a>
+            <hr>
+        </header>
+    </body>
+</html>
