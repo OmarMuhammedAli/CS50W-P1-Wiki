@@ -16,13 +16,13 @@ class NewPageForm(forms.Form):
 
     title = forms.CharField(
         help_text="<p class='text-secondary'>Please refer to <a class='text-info' href = https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax> GitHub’s Markdown guide</a> for guidance on how to use markdown.</p>",
-        widget= forms.TextInput(attrs={
+        widget=forms.TextInput(attrs={
             'placeholder':'Enter Title', 
             'class':'col-sm-11'})
         )
 
     content = forms.CharField( 
-        widget= forms.Textarea(attrs={
+        widget=forms.Textarea(attrs={
             'placeholder':'Enter markdown content', 
             'class':'col-sm-11', 
             'style': 'height: 35em;'})
